@@ -77,12 +77,9 @@ int main(){
 
     Meal todayMeal = dinner;
     cout<<todayMeal<<endl;      // Output 2
-    
+
     // cout<<breakfast<<endl;   // Output 0
     // cout<<lunch<<endl;      // Output 1
     // cout<<dinner<<endl;     // Output 2
     return 0;
 }
-
-
-

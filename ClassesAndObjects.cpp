@@ -67,8 +67,26 @@ class B : private A // ====>  class A public and protacted are accessible from c
             show2();
         }
 };
+class Base { 
+private: 
+	int pvt = 1; 
+
+protected: 
+	int prot = 2; 
+
+public: 
+	int pub = 3; 
+
+	// function to access private member 
+	int getPVT() { return pvt; } 
+}; 
+
+class PublicDerived : public Base { 
+public: 
+	// function to access protected member from Base 
+	int getProt() { return prot; } 
+}; 
 int main() {
-    
     // Employee Rohan;
 
     // // Rohan.a = 138 --> // This will throw error as a is private
@@ -77,8 +95,12 @@ int main() {
     // Rohan.SetData(10,20,30);
     // Rohan.GetData();
 
-    B obB;
-    obB.display1();
+    // B obB;
+    // obB.display1();
     
+    PublicDerived object1; 
+	cout << "Private = " << object1.getPVT() << endl; 
+	cout << "Protected = " << object1.getProt() << endl; 
+	cout << "Public = " << object1.pub << endl; 
     return 0;
 }

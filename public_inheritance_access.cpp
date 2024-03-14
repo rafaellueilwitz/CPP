@@ -15,14 +15,13 @@ public:
 
 	// function to access private member 
 	int getPVT() { return pvt; } 
-}; 
+};
 
 class PublicDerived : public Base { 
-public: 
+	public: 
 	// function to access protected member from Base 
-	int getProt() { return prot; } 
+	int getProt() { return prot; }
 }; 
-
 int main() 
 { 
 	PublicDerived object1; 

@@ -18,12 +18,12 @@ public:
 }; 
 
 class ProtectedDerived : protected Base { 
-public: 
-	// function to access protected member from Base 
-	int getProt() { return prot; } 
+    public: 
+        // function to access protected member from Base 
+        int getProt() { return prot; } 
 
-	// function to access public member from Base 
-	int getPub() { return pub; } 
+        // function to access public member from Base 
+        int getPub() { return pub; } 
 }; 
 
 int main() 

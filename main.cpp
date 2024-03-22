@@ -16,26 +16,26 @@
 //    
 //}
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main() {
-	//Print Sum of first 100 numbers
+// int main() {
+// 	//Print Sum of first 100 numbers
 
-	int i = 1;
-	int sum = 0;
+// 	int i = 1;
+// 	int sum = 0;
 
-	while (i <= 100)
-	{
-		sum = sum + i;
-		i++;
+// 	while (i <= 100)
+// 	{
+// 		sum = sum + i;
+// 		i++;
 
-	}
+// 	}
 
-	cout<< "Sum of first 100 Numbers is: " << sum << endl;
+// 	cout<< "Sum of first 100 Numbers is: " << sum << endl;
 
-	return 0;
-}
+// 	return 0;
+// }
 
 #include<iostream>
 using namespace std;
